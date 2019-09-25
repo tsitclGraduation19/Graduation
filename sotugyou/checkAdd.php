@@ -7,15 +7,11 @@
 </head>
 <body>
   <div class="tabs">
-  <input id="all" type="radio" name="tab_item" checked>
-  <label class="tab_item" for="all">競技</label>
-  <input id="programming" type="radio" name="tab_item">
-  <label class="tab_item" for="programming">選手</label>
-  <input id="design" type="radio" name="tab_item">
-  <label class="tab_item" for="design">施設</label>
-  <div class="tab_content" id="all_content">
-    <div class="tab_content_description">
-      <?php require('compeAdd.php')?>
+  <?php
+      require('common.php');
+  ?>
+  <div class="tab_content_description">
+      <?php require('checkCompe.php')?>
     </div>
   </div>
   <div class="tab_content" id="programming_content">
@@ -27,7 +23,6 @@
     <div class="tab_content_description">
       <?php require('facilitieAdd.php')?>
     </div>
-  </div>
 </div>
 </body>
 </html>

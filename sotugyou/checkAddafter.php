@@ -15,17 +15,17 @@
   <label class="tab_item" for="design">施設</label>
   <div class="tab_content" id="all_content">
     <div class="tab_content_description">
-      <?php require('compeAdd.php')?>
+      <?php require('checkCompe.php')?>
     </div>
   </div>
   <div class="tab_content" id="programming_content">
     <div class="tab_content_description">
-      <?php require('athleteAdd.php')?>
+      <?php require('checkAthlete.php')?>
     </div>
   </div>
   <div class="tab_content" id="design_content">
     <div class="tab_content_description">
-      <?php require('facilitieAdd.php')?>
+      <?php require('checkFacilitie.php')?>
     </div>
   </div>
 </div>

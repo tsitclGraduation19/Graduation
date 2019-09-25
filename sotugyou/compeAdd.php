@@ -1,7 +1,7 @@
-  <form action="checkAdd.php">
+  <form action="checkAdd.php" method="get">
     <table border="1">
       <tr>
-        <th>ID</th>
+        <th>競技名</th>
         <td><input type='text' name='Name'></td>
         <th>分類</th>
         <td><select name="Genre">
@@ -40,11 +40,11 @@
       </tr>
       <tr>
         <th>形式</th>
-        <td><input type="radio" name="type" value="個人">個人
-        <input type="radio" name="type" value="団体">団体</td>
+        <td><label><input type="radio" name="type" value="個人">個人</label>
+        <label><input type="radio" name="type" value="団体">団体</label></td>
         <th>競技大会</th>
-        <td><input type="radio" name="olympic" value="オリンピック">オリンピック
-        <input type="radio" name="olympic" value="パラリンピック">パラリンピック</td>
+        <td><label><input type="radio" name="olympic" value="オリンピック">オリンピック</label>
+        <label><input type="radio" name="olympic" value="パラリンピック">パラリンピック</label></td>
       </tr>
       <tr>
         <th>日にち</th>
@@ -66,5 +66,9 @@
         <textarea name="answer"></textarea></td>
       </tr>
     </table>
-    <input type="submit">
+    <label>
+      <input type="hidden" value="compe" name="type">
+    </label>
+    <input type="submit" value="確認">
+    <input type="reset" value="リセット">
   </form>

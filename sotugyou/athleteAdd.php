@@ -11,5 +11,8 @@
       <td colspan="3"><input type='url' name='profile'></td>
     </tr>
   </table>
+  <label>
+      <input type="hidden" value="athlete" name="type">
+    </label>
   <input type="submit">
 </form>

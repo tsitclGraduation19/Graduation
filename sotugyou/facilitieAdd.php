@@ -30,5 +30,8 @@
       <td><textarea name="overview"></textarea></td>
     </tr>
   </table>
+  <label>
+      <input type="hidden" value="facilitie" name="type">
+    </label>
   <input type="submit">
 </form>
