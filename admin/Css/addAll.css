@@ -1,0 +1,4 @@
+input[name="tab_item"]:disabled, #notSelect {
+  cursor: not-allowed;
+}
+
